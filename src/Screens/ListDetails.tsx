@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity,ImageBackground, ScrollView } from 'react-native';
-=======
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
->>>>>>> 93f917e (Updated screens with ListComponent and ListDetails)
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Places from '../assets/Data/Places.json';
 import PlacesList from '../assets/Data/PlacesList.json';
