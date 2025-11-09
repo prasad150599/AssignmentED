@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import ProfileScreen from './ProfileScreen';
 import MapScreen from './MapScreen';
 import HomeStack from './HomeStack';
+import ListViewComp from './ListDetails';
 
 const Tab =  createBottomTabNavigator();
 
@@ -44,6 +45,7 @@ const MainScreen = () => {
     },
   })}
 >
+           {/* <Tab.Screen name="ListViewComp" component={ListViewComp} /> */}
             <Tab.Screen name="Home" component={HomeStack} />
             <Tab.Screen name="Map" component={MapScreen} />
             <Tab.Screen name="Profile" component={ProfileScreen} />

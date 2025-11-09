@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './HomeScreen';
 import PlaceDetails from './PlaceDetails';
 import PlaceMapView from './PlaceMapView';
+import NetErrorScreen from './NetErrorScreen';
+import ListDetails from './ListDetails';
 
 const Stack = createNativeStackNavigator();
 const HomeStack = () => {
@@ -16,6 +18,10 @@ const HomeStack = () => {
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="PlaceDetails" component={PlaceDetails} />
         <Stack.Screen name="PlaceMapView" component={PlaceMapView}/>
+        <Stack.Screen name="NetError" component={NetErrorScreen}/>
+        <Stack.Screen name="ListDetails" component={ListDetails}/>
+
+
       </Stack.Navigator>
   
   );

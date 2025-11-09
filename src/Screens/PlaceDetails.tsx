@@ -35,7 +35,7 @@ const PlaceDetails = ({ navigation,route }: any) => {
         <Text style={styles.country}>Country: {place.country.name}</Text>
         <Text style={styles.description}>{place.description}</Text>
 
-        <TouchableOpacity style={{height:300, borderRadius:20,width:"100%",margin:10}}
+        <TouchableOpacity style={{height:280, borderRadius:30,width:"100%",margin:10}}
         onPress={() => {navigation.navigate('PlaceMapView', { place: place });}} >
 
         <MapView
