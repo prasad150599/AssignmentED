@@ -10,9 +10,8 @@ const HomeScreen: React.FC = ({ navigation }: any) => {
   return (
     <TouchableOpacity style={styles.itemContainer} onPress={() => {navigation.navigate('ListDetails', { listData: item })}}>
         <ImageBackground style={styles.image} 
-      source={{ uri: item.places[1].image_url }} >
+      source={{ uri: item.places[0].image_url }} >
         <Text style={{fontSize:16,fontWeight:'bold', color:"#FFFFFF", margin:10}} numberOfLines={1}>{item.listname}</Text>
-
      </ImageBackground>
     </TouchableOpacity>
   );
